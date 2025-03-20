@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UAV Path Planning Simulation</title>
+    <script src="p5.js"></script>
+    <script src="sketch1.js"></script>
+  </head>
+  <body>
+    <h1>UAV Path Planning Simulation</h1>
+    <div>
+      <label for="startX">Start X:</label>
+      <input type="number" id="startX" value="100" />
+      <label for="startY">Start Y:</label>
+      <input type="number" id="startY" value="100" />
+      <label for="startZ">Start Z:</label>
+      <input type="number" id="startZ" value="0" />
+      <label for="goalX">Goal X:</label>
+      <input type="number" id="goalX" value="700" />
+      <label for="goalY">Goal Y:</label>
+      <input type="number" id="goalY" value="500" />
+      <label for="goalZ">Goal Z:</label>
+      <input type="number" id="goalZ" value="50" />
+      <button onclick="updatePositions()">Update Positions</button>
+      <button onclick="planPath()">Plan Path</button>
+    </div>
+    <main></main>
+    <script>
+      function updatePositions() {
+        start = [
+          parseFloat(document.getElementById("startX").value),
+          parseFloat(document.getElementById("startY").value),
+          parseFloat(document.getElementById("startZ").value)
+        ];
+        goal = [
+          parseFloat(document.getElementById("goalX").value),
+          parseFloat(document.getElementById("goalY").value),
+          parseFloat(document.getElementById("goalZ").value)
+        ];
+        droneX = start[0];
+        droneY = start[1];
+        droneZ = start[2];
+        returning = false;
+        path = [];
+        planPath();
+      }
+    </script>
+  </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UAV Path Planning Simulation</title>
+    <script src="p5.js"></script>
+    <script src="sketch1.js"></script>
+  </head>
+  <body>
+    <h1>UAV Path Planning Simulation</h1>
+    <div>
+      <label for="startX">Start X:</label>
+      <input type="number" id="startX" value="100" />
+      <label for="startY">Start Y:</label>
+      <input type="number" id="startY" value="100" />
+      <label for="startZ">Start Z:</label>
+      <input type="number" id="startZ" value="0" />
+      <label for="goalX">Goal X:</label>
+      <input type="number" id="goalX" value="700" />
+      <label for="goalY">Goal Y:</label>
+      <input type="number" id="goalY" value="500" />
+      <label for="goalZ">Goal Z:</label>
+      <input type="number" id="goalZ" value="50" />
+      <button onclick="updatePositions()">Update Positions</button>
+      <button onclick="planPath()">Plan Path</button>
+    </div>
+    <main></main>
+    <script>
+      function updatePositions() {
+        start = [
+          parseFloat(document.getElementById("startX").value),
+          parseFloat(document.getElementById("startY").value),
+          parseFloat(document.getElementById("startZ").value)
+        ];
+        goal = [
+          parseFloat(document.getElementById("goalX").value),
+          parseFloat(document.getElementById("goalY").value),
+          parseFloat(document.getElementById("goalZ").value)
+        ];
+        droneX = start[0];
+        droneY = start[1];
+        droneZ = start[2];
+      }
+    </script>
+  </body>
+</html>
